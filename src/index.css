@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 *{
   box-sizing: border-box;
@@ -8,14 +8,18 @@
 
 body {
   margin: 0;
+  /* width: 100vw; */
+  height: 100vh;
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+  overflow-y: scroll;
 }
-
 :root {
   --primary-blue: hsl(231, 69%, 60%);
   --primary-red: hsl(0, 94%, 66%);
+  --neutral-light: #e8eaf6;
   --neutral-gb: hsl(229, 8%, 60%);
   --neutral-dark: hsl(229, 31%, 21%);
   --font-500: 500;
