@@ -40,6 +40,8 @@ nav .nav_items {
 /* Banner styles */
 .banner{
     width: 100%;
+    /* margin: 1rem 0; */
+    margin: 0;
 }
 .banner__img{
     position: relative;
@@ -59,6 +61,17 @@ nav .nav_items {
     z-index: -1;
     border-top-left-radius: 40%;
 }
+.img__bg{
+  background: var(--primary-blue);
+  width: 80%;
+  height: 88%;
+  position: absolute;
+  top: 89px;
+  left: -12px;
+  border-bottom-right-radius: 32%;
+  z-index: -1;
+  border-top-right-radius: 40%;
+}
 .banner__introText{
     padding: 3rem;
     text-align: center;
@@ -77,18 +90,132 @@ nav .nav_items {
     font-size: 15px;
     font-weight: 400;
     color: white;
+    background: var(--primary-blue);  
 }
 
-.introText__bottons a:first-child{
+#btn a{
+  background: var(--primary-blue);
+  color: white;
+}
+.introText__buttons a:first-child{
     background: var(--primary-blue);
     margin-right: .8rem;
 }
-.introText__bottons a:last-child{
+.introText__buttons a:last-child{
     background: var(--neutral-light);
     color: black;
 }
 
 /* Banner styles ends */
+
+/* Section Intro styles */
+.section__intro{
+  padding: 3rem;
+  text-align: center;
+}
+.intro__title{
+  /* font-size: 20px; */
+  font-weight: 600;
+}
+.intro__content{
+  color: var(--neutral-gb);
+  margin: 1.5rem 0; 
+}
+/* Section Intro styles ends */
+
+/* ---tabbed section */
+.nav-pills .nav-link{
+  color: black;
+  background: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--neutral-gb);
+  /* border-top: 1px solid var(--neutral-gb); */
+  position: relative;
+}
+.nav-pills .nav-link.active{
+  color: black;
+  background: none;
+  border-bottom: 3px solid var(--primary-red);
+}
+
+/* ---tabbed section ends */
+
+
+/* Browser cards section */
+.browserCards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 4rem 0;
+  gap: 2rem;
+}
+.browserCards__card{
+  width: 259px;
+  height: 345px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  position: relative;
+  overflow-x: hidden;
+}
+.card__head{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.card__head img{
+  margin-bottom: 1.5rem;
+}
+.card__bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__bottom a{
+  background: var(--primary-blue);
+}
+.bottom__dots{
+    transform: translateY(-15px);
+}
+/* Browser cards section ends */
+
+/* Questions Tab section */
+.questionsTab{
+  padding: 2rem;
+  padding-top: 0;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button{
+  padding: 1.2rem 0.5rem;
+  font-weight: 500 !important;
+}
+.accordion-button::after{
+  background-image: url("./images/icon-arrow.svg");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("./images/icon-arrow-red.svg");
+    transform: rotate(-180deg);
+}
+.accordion-item {
+  border: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+.questionsTab__button{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.accordion-body p{
+  color: var(--neutral-gb);
+  font-weight: 400;
+}
+
+/* Questions Tab section ends */
 
 
 /* Main content ends */
@@ -119,6 +246,9 @@ footer {
   font-size: 14px;
   letter-spacing: 3px;
   font-weight: 400;
+}
+.newsletter__introText{
+  margin-bottom: 1.5rem;
 }
 .newsletter__introText h3 {
   font-weight: 400;
