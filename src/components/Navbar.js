@@ -9,20 +9,12 @@ function Navbar() {
       <div className="brand">
         <img src={Logo} alt="" />
       </div>
-      <ul className="nav_items">
-        <li className="nav_links">
-          <a href="#">Features</a>
-        </li>
-        <li className="nav_links">
-          <a href="#">Pricing</a>
-        </li>
-        <li className="nav_links">
-          <a href="#">Contact</a>
-        </li>
-        <li className="nav_links">
-          <a href="#">Login</a>
-        </li>
-      </ul>
+      <div className="nav_items">
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+      </div>
       <div className="toggle">
         <img className="toggle__hamburger" src={Hamburger} alt="" />
         <img className="toggle__close" src={Close} alt="" />
